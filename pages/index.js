@@ -61,7 +61,7 @@ export default function Home() {
              เอกสาร<span>-&gt;</span>
             </h2>
             <p>
-              Find in-depth information about Next.js features and&nbsp;API.
+              &nbsp;API.
             </p>
           </a>
 
