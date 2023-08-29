@@ -1,16 +1,13 @@
+import React from 'react'
 import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import Link from 'next/link'
-import styles from '@/styles/Home.module.css'
-
-export default function index() {
+import Image from 'next/image';
+import Link from 'next/link';
+export default function Contact() {
   return (
     <>
     <Head>
       <title>Home Comin</title>
     </Head>
-
     <div>
     <header>
   <nav className="navbar navbar-expand-lg bg-#e3f2fd;">
@@ -52,102 +49,57 @@ export default function index() {
   </header>
     </div>
 
-<main>
-    <div id="carouselExampleDark" className="carousel carousel-dark slide">
-  <div className="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to={0} className="active" aria-current="true" aria-label="Slide 1" />
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to={1} aria-label="Slide 2" />
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to={2} aria-label="Slide 3" />
-  </div>
-  <div className="carousel-inner">
-    <div className="carousel-item active" data-bs-interval={2000}>
-      <img src="/22.jpg" className="d-block w-100" alt="LOL(1)" />
-      <div className="carousel-caption d-none d-md-block">
+  <div className="b-example-divider" />
+  <div className="container px-4 py-5">
+    <h2 className="pb-2 border-bottom">เกี่ยวกับเรา</h2>
+    <div className="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+      <div className="col d-flex flex-column align-items-start gap-2">
+      <img src="Untitled-3.png" width={445} height={550} />
+      </div>
+      <div className="col">
+        <div className="row row-cols-1 row-cols-sm-2 g-4">
+          <div className="col d-flex flex-column gap-2">
+            <div className="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+              <svg className="bi" width="1em" height="1em">
+                <use xlinkHref="#collection" />
+              </svg>
+            </div>
+            <h4 className="fw-semibold mb-0 text-body-emphasis">Facebook</h4>
+            <p className="text-body-secondary">เล่ ธนกฤต </p>
+          </div>
+          <div className="col d-flex flex-column gap-2">
+            <div className="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+              <svg className="bi" width="1em" height="1em">
+                <use xlinkHref="#gear-fill" />
+              </svg>
+            </div>
+            <h4 className="fw-semibold mb-0 text-body-emphasis">Instagram</h4>
+            <p className="text-body-secondary">blackbar.tanakit</p>
+          </div>
+          <div className="col d-flex flex-column gap-2">
+            <div className="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+              <svg className="bi" width="1em" height="1em">
+                <use xlinkHref="#speedometer" />
+              </svg>
+            </div>
+            <h4 className="fw-semibold mb-0 text-body-emphasis">Line</h4>
+            <p className="text-body-secondary">06709228..</p>
+          </div>
+          <div className="col d-flex flex-column gap-2">
+            <div className="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+              <svg className="bi" width="1em" height="1em">
+                <use xlinkHref="#table" />
+              </svg>
+            </div>
+            <h4 className="fw-semibold mb-0 text-body-emphasis">Phone</h4>
+            <p className="text-body-secondary">062-709-2282</p>
+          </div>
+        </div>
       </div>
     </div>
-
-    <div className="carousel-item" data-bs-interval={2000}>
-      <img src="/00.jpg" className="d-block w-100" alt="LOL(2)" />
-      <div className="carousel-caption d-none d-md-block">
-      </div>
-    </div>
-
-    <div className="carousel-item">
-      <img src="/11.jpg" className="d-block w-100" alt="LOL(5)" />
-      <div className="carousel-caption d-none d-md-block">
-      </div>
-    </div>
   </div>
 
-  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-    <span className="carousel-control-prev-icon" aria-hidden="true" />
-    <span className="visually-hidden">Previous</span>
-  </button>
-  <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-    <span className="carousel-control-next-icon" aria-hidden="true" />
-    <span className="visually-hidden">Next</span>
-  </button>
-</div>
-
-<br/>
-
-<div className="container marketing">
-  <div className="row">
-    <div className="col-lg-4">
-      <img className='bd-placeholder-img rounded-circle' width={140} height={140} src='logo2.jpg'></img>
-      <h2 className="fw-normal">Cybertice</h2>
-      <p><Link className="btn btn-secondary" href="https://www.cybertice.com/">View details »</Link></p>
-    </div>
-    <div className="col-lg-4">
-      <img className='bd-placeholder-img rounded-circle' width={140} height={140} src='Untitled-2.png'></img>      
-      <h2 className="fw-normal">Allnewstep</h2>
-      <p><Link className="btn btn-secondary" href="https://www.allnewstep.com/">View details »</Link></p>
-    </div>
-    <div className="col-lg-4">
-      <img className='bd-placeholder-img rounded-circle' width={140} height={140} src='logo3.jpg'></img>  
-      <h2 className="fw-normal">Arduitronics</h2>
-      <p><Link className="btn btn-secondary" href="https://www.arduitronics.com/">View details »</Link></p>
-    </div>
-  </div>
-  <hr className="featurette-divider" />
-  <div className="row featurette">
-    <div className="col-md-7">
-      <h2 className="featurette-heading fw-normal lh-1">Cybertice <span className="text-body-secondary"></span></h2>
-      <p className="lead">สอนใช้งาน NodeMCU ESP32 ส่งข้อความ สติ๊กเกอร์ รูปภาพ แจ้งเตือนผ่าน LINE Notify (2022)</p>
-    </div>
-    <div className="col-md-5">
-      <img className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width={500} height={500} src='banner3.jpg'></img>
-    </div>
-  </div>
-  <hr className="featurette-divider" />
-  <div className="row featurette">
-    <div className="col-md-7 order-md-2">
-      <h2 className="featurette-heading fw-normal lh-1">Arduitronics<span className="text-body-secondary"></span></h2>
-      <p className="lead">ประกาศวันนี้ </p>
-      <p className='lead'>" วันพุธที่ 30 ส.ค. 2566 ร้านหยุดส่งของ 1 วันนะคะ ลูกค้ายังคงสามารถสั่งของหน้าเวปได้ปกติแล้วทางทีมงานจะกลับมาส่งของให้ในวันพฤหัสบดี ที่ 31 สค 2566 อีกครั้งค่ะ"</p>
-    </div>
-    <div className="col-md-5 order-md-1">
-    <img className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width={500} height={500} src='banner2.jpg'></img>
-    </div>
-  </div>
-  <hr className="featurette-divider" />
-  <div className="row featurette">
-    <div className="col-md-7">
-      <h2 className="featurette-heading fw-normal lh-1">Allnewstep<span className="text-body-secondary">.</span></h2>
-      <p className="lead">สั่งซื้อสินค้าได้แล้วที่นี้</p>
-      <p className="lead">สินค้าส่งไวทันใจคุณลูกค้าทุกท่านแน่นอน</p>
-      <p className="lead">มีสินค้ามากมายหลายอย่างให้ท่านเลือก ในความคิดสร้างสรรค์มาใช้งานอย่างเกิดประโยชน์</p>
-      <p className="lead">ราคาเริ่มต้นอยู่ที่ 5 บาท ไม่รวมค่าส่ง มีสินค้าให้ท่านเลือก</p>
-    </div>
-    <div className="col-md-5">
-    <img className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width={500} height={500} src='banner1.jpg'></img>
-    </div>
-  </div>
-  <hr className="featurette-divider" />
-</div>
-</main>
-
-<footer className="container">
+  <footer className="container">
 <div>
   <div className="b-example-divider" />
   <div className="container">
@@ -206,8 +158,8 @@ export default function index() {
     </footer>
   </div>
 </div>
-
 </footer>
+
     </>
   )
 }
