@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 
 export default function Component({ posts }) {
-  const { data: session } = useSession()
+  // const { data: session } = useSession()
   const router = useRouter()
   
 //----------------------start handleSubmit--------------------------
@@ -26,7 +26,7 @@ export default function Component({ posts }) {
     console.log("password :", jsonData.password);
     console.log("status:", jsonData.studentid);
 
-    fetch(`https://09fb-49-229-108-182.ngrok-free.app/api/users`, {
+    fetch(`https://a6fb-2403-6200-8851-136d-dcb3-e5df-d9c6-d6b0.ngrok-free.app/api/users`, {
         method: 'POST', // or 'PUT'
         headers: {
           'Content-Type': 'application/json',
@@ -49,19 +49,19 @@ export default function Component({ posts }) {
   }; //end handleSubmit
 
 
-  if (session) {
+  // if (session) {
     return (
       <>
-        <nav class="navbar bg-warning" >
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
+        {/* <nav class="navbar bg-warning" > */}
+            {/* <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a> */}
                 {/* Signed in as {session.user.email} <br /> */}
-              <div class="right">
+              {/* <div class="right">
                 {session.user.fname}  {session.user.lname} <br />
               </div>
                 <button class="btn btn-danger"   onClick={() => signOut()}>Sign out</button>
             </div>
-        </nav>
+        </nav> */}
             
     <form onSubmit={handleSubmit}>
         <div className="container my-4"> 
@@ -97,7 +97,7 @@ export default function Component({ posts }) {
     </form>
       </>
     )
-  }
+  // }
   return (
     <>
       <div className="container">
