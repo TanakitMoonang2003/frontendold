@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useRouter } from "next/router";
 
 export async function getStaticProps() {
-  const res = await fetch('https://09fb-49-229-108-182.ngrok-free.app/api/users')
+  const res = await fetch(' https://daaf-2403-6200-8851-136d-dcb3-e5df-d9c6-d6b0.ngrok-free.app/api/users')
   const posts = await res.json()
 
   return {
@@ -27,19 +27,19 @@ const handleDelete = async (id) => {
 }
 
 
-  if (session) {
+  // if (session) {
     return (
       <>
 
             <nav class="navbar bg-warning" >
-              <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
+              {/* <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a> */}
                 {/* Signed in as {session.user.email} <br /> */}
-              <div class="right">
+              {/* <div class="right">
                 {session.user.fname}  {session.user.lname} <br />
               </div>
                 <button class="btn btn-danger"   onClick={() => signOut()}>Sign out</button>
-              </div>
+              </div> */}
             </nav>
             
 
@@ -95,7 +95,7 @@ const handleDelete = async (id) => {
           </div>
       </>
     )
-  }
+  // }
   return (
     <>
       <div className="container">
