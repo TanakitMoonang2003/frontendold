@@ -26,7 +26,7 @@ export default function Component({ posts }) {
     console.log("password :", jsonData.password);
     console.log("status:", jsonData.studentid);
 
-    fetch(`https://f7a0-2403-6200-8851-136d-dcb3-e5df-d9c6-d6b0.ngrok-free.app/api/users`, {
+    fetch(`https://1fbd-2403-6200-8851-136d-4d3f-d0a4-46c3-43dd.ngrok-free.app/api/users`, {
         method: 'POST', // or 'PUT'
         headers: {
           'Content-Type': 'application/json',
