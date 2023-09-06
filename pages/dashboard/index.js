@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useRouter } from "next/router";
 
 export async function getServerSideProps() {
-  const res = await fetch(' https://a169-2403-6200-8851-136d-4d3f-d0a4-46c3-43dd.ngrok-free.app/api/users')
+  const res = await fetch(' https://56dd-2403-6200-8851-136d-4d3f-d0a4-46c3-43dd.ngrok-free.app/api/users')
   const posts = await res.json()
 
   return {
@@ -20,7 +20,7 @@ export default function Component({ posts }) {
 
 const handleDelete = async (id) => {
   //console.log("ID : ", id);
-  fetch('https://a169-2403-6200-8851-136d-4d3f-d0a4-46c3-43dd.ngrok-free.app/api/users?id=' + id, {
+  fetch('https://56dd-2403-6200-8851-136d-4d3f-d0a4-46c3-43dd.ngrok-free.app/api/users?id=' + id, {
     method: 'DELETE',
   })
   return router.reload('/dashbord')
